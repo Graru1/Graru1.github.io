@@ -12,4 +12,5 @@ Enter ceiling gap...: Enter a height which is equal or higher than 63. This will
 60: Enter a custom angle from 45 to 89. This will be used for angled bounces.
 
 Bounce and Jumpbug Checker Website URL: https://graru1.github.io/bounce
+
 LICENSE: https://github.com/Graru1/Graru1.github.io/blob/master/LICENSE
