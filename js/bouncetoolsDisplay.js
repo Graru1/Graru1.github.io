@@ -297,9 +297,9 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 				//console.log("rad_startUn")
 					var bounceAngleResult = calculateAngle(floor_height, nearestAngle, "STOCK", "UNCROUCHED", "UNCROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
-						//console.log("No angeled bounce found")
+						//console.log("No angled bounce found")
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_Un").style.display = "none";
 					} else { 
 						//console.log("Angeled bounce found")
@@ -311,14 +311,14 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_cA_ba1_Un").innerHTML = ba1;
 						document.getElementById("td_cA_ba2_Un").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_Un").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateAngle(floor_height, nearestAngle, "STOCK", "UNCROUCHED", "CROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					} else {
 						var ba1 = bounceAngleResult[0];
@@ -329,15 +329,15 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_cA_ba1_C").innerHTML = ba1;
 						document.getElementById("td_cA_ba2_C").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_C").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateAngle(floor_height, nearestAngle, "STOCK", "CROUCHED", "UNCROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
-						//console.log("No angeled bounce found")
+						//console.log("No angled bounce found")
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_Un").style.display = "none";
 					} else { 
 						//console.log("Angeled bounce found")
@@ -349,14 +349,14 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_cA_ba1_C_Un").innerHTML = ba1;
 						document.getElementById("td_cA_ba2_C_Un").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_Un").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateAngle(floor_height, nearestAngle, "STOCK", "CROUCHED", "CROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					} else {
 						var ba1 = bounceAngleResult[0];
@@ -367,7 +367,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_cA_ba1_C_C").innerHTML = ba1;
 						document.getElementById("td_cA_ba2_C_C").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_C").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 		}
@@ -377,9 +377,9 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 				//console.log("rad_startUn")
 					var bounceAngleResult = calculateAngle(floor_height, nearestAngle, "ORIGINAL", "UNCROUCHED", "UNCROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
-						//console.log("No angeled bounce found")
+						//console.log("No angled bounce found")
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_Un").style.display = "none";
 					} else { 
 						//console.log("Angeled bounce found")
@@ -391,14 +391,14 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_cA_ba1_Un").innerHTML = ba1;
 						document.getElementById("td_cA_ba2_Un").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_Un").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateAngle(floor_height, nearestAngle, "ORIGINAL", "UNCROUCHED", "CROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					} else {
 						var ba1 = bounceAngleResult[0];
@@ -409,15 +409,15 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_cA_ba1_C").innerHTML = ba1;
 						document.getElementById("td_cA_ba2_C").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_C").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateAngle(floor_height, nearestAngle, "ORIGINAL", "CROUCHED", "UNCROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
-						//console.log("No angeled bounce found")
+						//console.log("No angled bounce found")
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_Un").style.display = "none";
 					} else { 
 						//console.log("Angeled bounce found")
@@ -429,14 +429,14 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_cA_ba1_C_Un").innerHTML = ba1;
 						document.getElementById("td_cA_ba2_C_Un").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_Un").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateAngle(floor_height, nearestAngle, "ORIGINAL", "CROUCHED", "CROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					} else {
 						var ba1 = bounceAngleResult[0];
@@ -447,7 +447,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_cA_ba1_C_C").innerHTML = ba1;
 						document.getElementById("td_cA_ba2_C_C").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_C").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 		}
@@ -457,9 +457,9 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 				//console.log("rad_startUn")
 					var bounceAngleResult = calculateAngle(floor_height, nearestAngle, "COWMANGLER", "UNCROUCHED", "UNCROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
-						//console.log("No angeled bounce found")
+						//console.log("No angled bounce found")
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_Un").style.display = "none";
 					} else { 
 						//console.log("Angeled bounce found")
@@ -471,14 +471,14 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_cA_ba1_Un").innerHTML = ba1;
 						document.getElementById("td_cA_ba2_Un").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_Un").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateAngle(floor_height, nearestAngle, "COWMANGLER", "UNCROUCHED", "CROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					} else {
 						var ba1 = bounceAngleResult[0];
@@ -489,15 +489,15 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_cA_ba1_C").innerHTML = ba1;
 						document.getElementById("td_cA_ba2_C").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_C").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateAngle(floor_height, nearestAngle, "COWMANGLER", "CROUCHED", "UNCROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
-						//console.log("No angeled bounce found")
+						//console.log("No angled bounce found")
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_Un").style.display = "none";
 					} else { 
 						//console.log("Angeled bounce found")
@@ -509,14 +509,14 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_cA_ba1_C_Un").innerHTML = ba1;
 						document.getElementById("td_cA_ba2_C_Un").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_Un").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateAngle(floor_height, nearestAngle, "COWMANGLER", "CROUCHED", "CROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					} else {
 						var ba1 = bounceAngleResult[0];
@@ -527,7 +527,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_cA_ba1_C_C").innerHTML = ba1;
 						document.getElementById("td_cA_ba2_C_C").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_C").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 		}
@@ -537,9 +537,9 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 				//console.log("rad_startUn")
 					var bounceAngleResult = calculateAngle(floor_height, nearestAngle, "COWMANGLERCHARGED", "UNCROUCHED", "UNCROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
-						//console.log("No angeled bounce found")
+						//console.log("No angled bounce found")
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_Un").style.display = "none";
 					} else { 
 						//console.log("Angeled bounce found")
@@ -551,14 +551,14 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_cA_ba1_Un").innerHTML = ba1;
 						document.getElementById("td_cA_ba2_Un").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_Un").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateAngle(floor_height, nearestAngle, "COWMANGLERCHARGED", "UNCROUCHED", "CROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					} else {
 						var ba1 = bounceAngleResult[0];
@@ -569,15 +569,15 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_cA_ba1_C").innerHTML = ba1;
 						document.getElementById("td_cA_ba2_C").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_C").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateAngle(floor_height, nearestAngle, "COWMANGLERCHARGED", "CROUCHED", "UNCROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
-						//console.log("No angeled bounce found")
+						//console.log("No angled bounce found")
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_Un").style.display = "none";
 					} else { 
 						//console.log("Angeled bounce found")
@@ -589,14 +589,14 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_cA_ba1_C_Un").innerHTML = ba1;
 						document.getElementById("td_cA_ba2_C_Un").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_Un").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateAngle(floor_height, nearestAngle, "COWMANGLERCHARGED", "CROUCHED", "CROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					} else {
 						var ba1 = bounceAngleResult[0];
@@ -607,7 +607,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_cA_ba1_C_C").innerHTML = ba1;
 						document.getElementById("td_cA_ba2_C_C").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_C").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 		}
@@ -624,9 +624,9 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 				//console.log("rad_startUn")
 					var bounceAngleResult = calculateOptimalAngle(floor_height, "STOCK", "UNCROUCHED", "UNCROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
-						//console.log("No angeled bounce found")
+						//console.log("No angled bounce found")
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_Un").style.display = "none";
 					} else { 
 						//console.log("Angeled bounce found")
@@ -638,14 +638,14 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_bA_ba1_Un").innerHTML = ba1;
 						document.getElementById("td_bA_ba2_Un").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_Un").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateOptimalAngle(floor_height, "STOCK", "UNCROUCHED", "CROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					} else {
 						var ba1 = bounceAngleResult[0];
@@ -656,15 +656,15 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_bA_ba1_C").innerHTML = ba1;
 						document.getElementById("td_bA_ba2_C").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_C").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateOptimalAngle(floor_height, "STOCK", "CROUCHED", "UNCROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
-						//console.log("No angeled bounce found")
+						//console.log("No angled bounce found")
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_Un").style.display = "none";
 					} else { 
 						//console.log("Angeled bounce found")
@@ -676,14 +676,14 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 						document.getElementById("cr_td_bA_ba1_Un").innerHTML = ba1;
 						document.getElementById("cr_td_bA_ba2_Un").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_Un").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateOptimalAngle(floor_height, "STOCK", "CROUCHED", "CROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					} else {
 						var ba1 = bounceAngleResult[0];
@@ -694,7 +694,7 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 						document.getElementById("cr_td_bA_ba1_C").innerHTML = ba1;
 						document.getElementById("cr_td_bA_ba2_C").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_C").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 		}
@@ -704,9 +704,9 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 				//console.log("rad_startUn")
 					var bounceAngleResult = calculateOptimalAngle(floor_height, "ORIGINAL", "UNCROUCHED", "UNCROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
-						//console.log("No angeled bounce found")
+						//console.log("No angled bounce found")
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_Un").style.display = "none";
 					} else { 
 						//console.log("Angeled bounce found")
@@ -718,14 +718,14 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_bA_ba1_Un").innerHTML = ba1;
 						document.getElementById("td_bA_ba2_Un").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_Un").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateOptimalAngle(floor_height, "ORIGINAL", "UNCROUCHED", "CROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					} else {
 						var ba1 = bounceAngleResult[0];
@@ -736,15 +736,15 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_bA_ba1_C").innerHTML = ba1;
 						document.getElementById("td_bA_ba2_C").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_C").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateOptimalAngle(floor_height, "ORIGINAL", "CROUCHED", "UNCROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
-						//console.log("No angeled bounce found")
+						//console.log("No angled bounce found")
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_Un").style.display = "none";
 					} else { 
 						//console.log("Angeled bounce found")
@@ -756,14 +756,14 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 						document.getElementById("cr_td_bA_ba1_Un").innerHTML = ba1;
 						document.getElementById("cr_td_bA_ba2_Un").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_Un").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateOptimalAngle(floor_height, "ORIGINAL", "CROUCHED", "CROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					} else {
 						var ba1 = bounceAngleResult[0];
@@ -774,7 +774,7 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 						document.getElementById("cr_td_bA_ba1_C").innerHTML = ba1;
 						document.getElementById("cr_td_bA_ba2_C").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_C").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 		}
@@ -784,9 +784,9 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 				//console.log("rad_startUn")
 					var bounceAngleResult = calculateOptimalAngle(floor_height, "COWMANGLER", "UNCROUCHED", "UNCROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
-						//console.log("No angeled bounce found")
+						//console.log("No angled bounce found")
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_Un").style.display = "none";
 					} else { 
 						//console.log("Angeled bounce found")
@@ -798,14 +798,14 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_bA_ba1_Un").innerHTML = ba1;
 						document.getElementById("td_bA_ba2_Un").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_Un").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateOptimalAngle(floor_height, "COWMANGLER", "UNCROUCHED", "CROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					} else {
 						var ba1 = bounceAngleResult[0];
@@ -816,15 +816,15 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_bA_ba1_C").innerHTML = ba1;
 						document.getElementById("td_bA_ba2_C").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_C").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateOptimalAngle(floor_height, "COWMANGLER", "CROUCHED", "UNCROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
-						//console.log("No angeled bounce found")
+						//console.log("No angled bounce found")
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_Un").style.display = "none";
 					} else { 
 						//console.log("Angeled bounce found")
@@ -836,14 +836,14 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 						document.getElementById("cr_td_bA_ba1_Un").innerHTML = ba1;
 						document.getElementById("cr_td_bA_ba2_Un").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_Un").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateOptimalAngle(floor_height, "COWMANGLER", "CROUCHED", "CROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					} else {
 						var ba1 = bounceAngleResult[0];
@@ -854,7 +854,7 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 						document.getElementById("cr_td_bA_ba1_C").innerHTML = ba1;
 						document.getElementById("cr_td_bA_ba2_C").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_C").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 		}
@@ -864,9 +864,9 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 				//console.log("rad_startUn")
 					var bounceAngleResult = calculateOptimalAngle(floor_height, "COWMANGLERCHARGED", "UNCROUCHED", "UNCROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
-						//console.log("No angeled bounce found")
+						//console.log("No angled bounce found")
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_Un").style.display = "none";
 					} else { 
 						//console.log("Angeled bounce found")
@@ -878,14 +878,14 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_bA_ba1_Un").innerHTML = ba1;
 						document.getElementById("td_bA_ba2_Un").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_Un").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateOptimalAngle(floor_height, "COWMANGLERCHARGED", "UNCROUCHED", "CROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					} else {
 						var ba1 = bounceAngleResult[0];
@@ -896,15 +896,15 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 						document.getElementById("td_bA_ba1_C").innerHTML = ba1;
 						document.getElementById("td_bA_ba2_C").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_C").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateOptimalAngle(floor_height, "COWMANGLERCHARGED", "CROUCHED", "UNCROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
-						//console.log("No angeled bounce found")
+						//console.log("No angled bounce found")
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_Un").style.display = "none";
 					} else { 
 						//console.log("Angeled bounce found")
@@ -916,14 +916,14 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 						document.getElementById("cr_td_bA_ba1_Un").innerHTML = ba1;
 						document.getElementById("cr_td_bA_ba2_Un").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_Un").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 				
 					var bounceAngleResult = calculateOptimalAngle(floor_height, "COWMANGLERCHARGED", "CROUCHED", "CROUCHED", false);
 					if (bounceAngleResult[0] == 0) {
 						document.getElementById("divID_DiffTitle").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled bounce found";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angled bounce found";
 						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					} else {
 						var ba1 = bounceAngleResult[0];
@@ -934,7 +934,7 @@ if (document.getElementById("chk_angleCheck").checked && !wrongInputFloor) {
 						document.getElementById("cr_td_bA_ba1_C").innerHTML = ba1;
 						document.getElementById("cr_td_bA_ba2_C").innerHTML = ba2;
 						document.getElementById("divID_Diff_cA_C").style.display = "";
-						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angeled Bounces";
+						document.getElementById("divID_DiffTitle_txt").innerHTML = "Angled Bounces";
 						document.getElementById("divID_DiffTitle").style.display = "";
 					}
 		}
@@ -1265,7 +1265,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 				//console.log("rad_startUn")
 					var bounceAngleResult = calculateAngle(floor_height, nearestAngle, "STOCK", "UNCROUCHED", "UNCROUCHED", true);
 					if (bounceAngleResult[0] == 0) {
-						//console.log("No angeled bounce found")
+						//console.log("No angled bounce found")
 						document.getElementById("divID_DiffTitle").style.display = "";
 						document.getElementById("divID_DiffTitle_txt").innerHTML = "No angeled jumpbug found";
 						document.getElementById("divID_Diff_cA_Un").style.display = "none";
