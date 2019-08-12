@@ -269,7 +269,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor || d
 	
 	if (bounceFound == 0 && ceilingResult[0] == 0 && !wrongInputCeiling) {
 		//document.getElementById("ceilingResults").innerHTML = "<h3>No ceilingsmash found</h3>";
-		document.getElementById("bounceResults_txt").innerHTML = "No bounce found";
+		document.getElementById("bounceResults_txt").innerHTML = "No ceilingsmash found";
 		document.getElementById("bounceResults").style.display = "";
 	} else if (!wrongInputCeiling && ceilingResult[0] == 0 && bounceFound == 0) {
 		document.getElementById("bounceResults_txt").innerHTML = "No ceilingsmash found";
@@ -1200,7 +1200,7 @@ function m_jumpbug()
 	// 
 	var f_h = 0 - floor_height;
 	
-if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
+if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor || document.getElementById("chk_bouncesCheck").checked && !wrongInputCeiling) {
 	// Calculate default bounce results
 	var walkOutU = "";
 	var walkOutC = "";
@@ -1240,7 +1240,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 		if (bounceResult[9] == 1) {cwalkOutU = "<tr><td class='text-right' style='color:green'>Crouch Walk</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Jumpbug</td></tr>"
 		}else if (bounceResult[9] == 2) {cwalkOutU = "<tr><td class='text-right' style='color:#28bbbb'>Crouch Walk</td><td style='width: 46px; color:#28bbbb'> -&gt; </td><td class='text-left' style='color:#28bbbb'>Jumpbug (doublejumpbug)</td></tr>"};
 		//if (bounceResult[10] == 1) {cwalkOutC = "<tr><td class='text-right' style='color:green'>Crouch Walk</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Crouched</td></tr>"};
-		document.getElementById("bounceTipsU").innerHTML = (walkOutU) + (jumpOutU) + (ctapOutU) + (cjumpOutU) + (cwalkOutU);
+		document.getElementById("bounceTipsU").innerHTML += (walkOutU) + (jumpOutU) + (ctapOutU) + (cjumpOutU) + (cwalkOutU);
 		//document.getElementById("bounceTipsC").innerHTML = (walkOutC) + (jumpOutC) + (ctapOutC) + (cjumpOutC) + (cwalkOutC);
 	}
 	
@@ -1255,7 +1255,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 		document.getElementById("bounceResults_txt").innerHTML = "No jumpbug found";
 		document.getElementById("bounceResults").style.display = "";
 	} else if (!wrongInputCeiling && ceilingResult[0] == 0 && bounceFound == 0) {
-		document.getElementById("bounceResults_txt").innerHTML = "No ceilingsmash found";
+		document.getElementById("bounceResults_txt").innerHTML = "No jumpbug found";
 		document.getElementById("bounceResults").style.display = "";
 	} else if (!wrongInputCeiling && ceilingResult[0] == 1 && bounceFound == 0) { 
 		ceilingFound = 1;
