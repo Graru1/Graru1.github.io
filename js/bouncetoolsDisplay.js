@@ -217,7 +217,7 @@ function m_bounce()
 	// 
 	var f_h = 0 - floor_height;
 	
-if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
+if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor || document.getElementById("chk_bouncesCheck").checked && !wrongInputCeiling) {
 	// Calculate default bounce results
 	var walkOutU = "";
 	var walkOutC = "";
@@ -233,7 +233,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 	
 	var ceilingResult = checkCeilings(ceiling_gap, false);
 	var bounceResult = checkBounces(floor_height, false);
-	if (ceilingResult[0] == 0 && bounceResult[0] == 0 && !wrongInputFloor) {
+	if (bounceResult[0] == 0 && !wrongInputFloor) {
 		document.getElementById("bounceResults_txt").innerHTML = "No bounce found";
 		document.getElementById("bounceResults").style.display = "";
 	} else if (!wrongInputFloor) { 
@@ -257,8 +257,8 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 		if (bounceResult[9] == 1) {cwalkOutU = "<tr><td class='text-right' style='color:green'>Crouch Walk</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Uncrouched</td></tr>"
 		}else if (bounceResult[9] == 2) {cwalkOutU = "<tr><td class='text-right' style='color:#28bbbb'>Crouch Walk</td><td style='width: 46px; color:#28bbbb'> -&gt; </td><td class='text-left' style='color:#28bbbb'>Uncrouched (doublebouncehop)</td></tr>"};
 		if (bounceResult[10] == 1) {cwalkOutC = "<tr><td class='text-right' style='color:green'>Crouch Walk</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Crouched</td></tr>"};
-		document.getElementById("bounceTipsU").innerHTML = (walkOutU) + (jumpOutU) + (ctapOutU) + (cjumpOutU) + (cwalkOutU);
-		document.getElementById("bounceTipsC").innerHTML = (walkOutC) + (jumpOutC) + (ctapOutC) + (cjumpOutC) + (cwalkOutC);
+		document.getElementById("bounceTipsU").innerHTML += (walkOutU) + (jumpOutU) + (ctapOutU) + (cjumpOutU) + (cwalkOutU);
+		document.getElementById("bounceTipsC").innerHTML += (walkOutC) + (jumpOutC) + (ctapOutC) + (cjumpOutC) + (cwalkOutC);
 	}
 	
 	//console.log("walkOutU, walkOutC, jumpOutU, jumpOutC, ctapOutU, ctapOutC, cjumpOutU, cjumpOutC, cwalkOutU, cwalkOutC, ceilingOutU, ceilingOutC");
@@ -267,14 +267,29 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 	var ceilingOutC = "";
 	var ceilingFound = 0;
 	
-	if (bounceResult[0] == 0 && ceilingResult[0] == 0 && !wrongInputCeiling) {
+	if (bounceFound == 0 && ceilingResult[0] == 0 && !wrongInputCeiling) {
 		//document.getElementById("ceilingResults").innerHTML = "<h3>No ceilingsmash found</h3>";
 		document.getElementById("bounceResults_txt").innerHTML = "No bounce found";
 		document.getElementById("bounceResults").style.display = "";
-	} else if (!wrongInputCeiling) { 
+	} else if (!wrongInputCeiling && ceilingResult[0] == 0 && bounceFound == 0) {
+		document.getElementById("bounceResults_txt").innerHTML = "No ceilingsmash found";
+		document.getElementById("bounceResults").style.display = "";
+	} else if (!wrongInputCeiling && ceilingResult[0] == 1 && bounceFound == 0) { 
 		ceilingFound = 1;
 		//document.getElementById("ceilingResults").innerHTML = "<h3>" + "This height can be ceilingsmashed with:" + "</h3>";
-		document.getElementById("bounceResults_txt").innerHTML = "This height can be bounced with";
+		document.getElementById("bounceResults_txt").innerHTML = "This height can be ceilingsmashed with";
+		document.getElementById("bounceResults").style.display = "";
+		document.getElementById("bounceResultsU").style.display = "";
+		document.getElementById("bounceResultsC").style.display = "";
+		if (ceilingResult[1] == 1) {ceilingOutU = "<tr><td class='text-right' style='color:green'>Ceilingsmash</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Uncrouched</td></tr>"
+		}else if (ceilingResult[1] == 2) {ceilingOutU = "<tr><td class='text-right' style='color:#28bbbb'>Ceilingsmash</td><td style='width: 46px; color:#28bbbb'> -&gt; </td><td class='text-left' style='color:#28bbbb'>Uncrouched (doublebouncehop)</td></tr>"};
+		if (ceilingResult[2] == 1) {ceilingOutC = "<tr><td class='text-right' style='color:green'>Ceilingsmash</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Crouched</td></tr>"};
+		document.getElementById("bounceTipsU").innerHTML += (ceilingOutU);
+		document.getElementById("bounceTipsC").innerHTML += (ceilingOutC);
+	} else if (!wrongInputCeiling && ceilingResult[0] == 1 && bounceFound == 1) { 
+		ceilingFound = 1;
+		//document.getElementById("ceilingResults").innerHTML = "<h3>" + "This height can be ceilingsmashed with:" + "</h3>";
+		//document.getElementById("bounceResults_txt").innerHTML = "This height can be ceilingsmashed with";
 		document.getElementById("bounceResults").style.display = "";
 		document.getElementById("bounceResultsU").style.display = "";
 		document.getElementById("bounceResultsC").style.display = "";
