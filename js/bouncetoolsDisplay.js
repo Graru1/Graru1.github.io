@@ -102,20 +102,20 @@ function m_bounce()
 			//return 0;
 		}
 		else if (floor_height < 1) {
-			//document.getElementById("bounceInfo").innerHTML = "@Height Enter a height > 1";
+			//document.getElementById("bounceInfo").innerHTML = "@Height Enter a height >= 1";
 			h_greater = 1;
 			wrongInputFloor = 1;
 			//return 0;
 		}
 	}
 	else {
-		//document.getElementById("bounceInfo").innerHTML = "@Height Enter a height > 1";
+		//document.getElementById("bounceInfo").innerHTML = "@Height Enter a height >= 1";
 		h_else = 1;
 		//wrongInputFloor = 1;
 		//return 0;
 	}
 	if (typeof floor_height !== "undefined" && floor_height == ''){
-		//document.getElementById("bounceInfo").innerHTML = "@Height Enter a height > 1";
+		//document.getElementById("bounceInfo").innerHTML = "@Height Enter a height >= 1";
 		h_undefined = 1;
 		wrongInputFloor = 1;
 		//console.log("wrongInputFloor = 1;")
@@ -132,20 +132,20 @@ function m_bounce()
 			//return 0;
 		}
 		else if (ceiling_gap < 63) {
-			//document.getElementById("ceilingInfo").innerHTML = "@Ceiling Enter a height > 63";
+			//document.getElementById("ceilingInfo").innerHTML = "@Ceiling Enter a height >= 63";
 			c_greater = 1;
 			wrongInputCeiling = 1;
 			//return 0;
 		}
 	}
 	else {
-		//document.getElementById("ceilingInfo").innerHTML = "@Ceiling Enter a height > 63";
+		//document.getElementById("ceilingInfo").innerHTML = "@Ceiling Enter a height >= 63";
 		c_else = 1;
 		//wrongInputCeiling = 1;
 		//return 0;
 	}
 	if (typeof ceiling_gap !== "undefined" && ceiling_gap == '') {
-		//document.getElementById("ceilingInfo").innerHTML = "@Ceiling Enter a height > 63";
+		//document.getElementById("ceilingInfo").innerHTML = "@Ceiling Enter a height >= 63";
 		c_undefined = 1;
 		wrongInputCeiling = 1;
 		//console.log("wrongInputCeiling = 1;")
@@ -159,7 +159,7 @@ function m_bounce()
 	}
 	if (!isNaN(nearestAngle)) {
 		if (nearestAngle < 45 || nearestAngle > 89) {
-			//document.getElementById("angleInfo").innerHTML = "@Angle Nearest angle should be 45 < x < 89";
+			//document.getElementById("angleInfo").innerHTML = "@Angle Nearest angle should be 45 <= x <= 89";
 			a_range = 1;
 			wrongInputAngle = 1;
 			//return 0;
@@ -190,21 +190,21 @@ function m_bounce()
 	if((wrongInputFloor && wrongInputAngle) || (!wrongInputFloor && wrongInputAngle) || (h_else && c_else) || (wrongInputFloor) && (wrongInputCeiling) || (h_else) && (!wrongInputAngle) || (c_else) || (c_greater) && (!wrongInputFloor) && (!c_undefined)){
 		//console.log("wrongInputFloor:" + wrongInputFloor + " wrongInputAngle:" + wrongInputAngle + " h_else:" + h_else + " c_else:" + c_else + " wrongInputFloor:" + wrongInputFloor + " wrongInputCeiling:" + wrongInputCeiling)
 		if (h_greater || h_else || h_undefined){
-			document.getElementById("bounceInfo").innerHTML = "@Height Enter a height > 1";
+			document.getElementById("bounceInfo").innerHTML = "@Height Enter a height >= 1";
 			document.getElementById("bounceInfo").style.display = "";
 		}else if(h_silly){
 			document.getElementById("bounceInfo").innerHTML = "@Height Silly..";
 			document.getElementById("bounceInfo").style.display = "";
 		};
 		if (c_greater || c_else || c_undefined){
-			document.getElementById("ceilingInfo").innerHTML = "@Ceiling Enter a height > 63";
+			document.getElementById("ceilingInfo").innerHTML = "@Ceiling Enter a height >= 63";
 			document.getElementById("ceilingInfo").style.display = "";
 		}else if(c_silly){
 			document.getElementById("ceilingInfo").innerHTML = "@Ceiling Silly..";
 			document.getElementById("ceilingInfo").style.display = "";
 		};
 		if (a_range){
-			document.getElementById("angleInfo").innerHTML = "∠ Nearest angle should be 45 < x < 89";
+			document.getElementById("angleInfo").innerHTML = "∠ Nearest angle should be 45 <= x <= 89";
 			document.getElementById("angleInfo").style.display = "";
 		}else if(a_number){
 			document.getElementById("angleInfo").innerHTML = "∠ Nearest angle needs to be a number";
@@ -1085,20 +1085,20 @@ function m_jumpbug()
 			//return 0;
 		}
 		else if (floor_height < 1) {
-			//document.getElementById("bounceInfo").innerHTML = "@Height Enter a height > 1";
+			//document.getElementById("bounceInfo").innerHTML = "@Height Enter a height >= 1";
 			h_greater = 1;
 			wrongInputFloor = 1;
 			//return 0;
 		}
 	}
 	else {
-		//document.getElementById("bounceInfo").innerHTML = "@Height Enter a height > 1";
+		//document.getElementById("bounceInfo").innerHTML = "@Height Enter a height >= 1";
 		h_else = 1;
 		//wrongInputFloor = 1;
 		//return 0;
 	}
 	if (typeof floor_height !== "undefined" && floor_height == ''){
-		//document.getElementById("bounceInfo").innerHTML = "@Height Enter a height > 1";
+		//document.getElementById("bounceInfo").innerHTML = "@Height Enter a height >= 1";
 		h_undefined = 1;
 		wrongInputFloor = 1;
 		//console.log("wrongInputFloor = 1;")
@@ -1115,20 +1115,20 @@ function m_jumpbug()
 			//return 0;
 		}
 		else if (ceiling_gap < 63) {
-			//document.getElementById("ceilingInfo").innerHTML = "@Ceiling Enter a height > 63";
+			//document.getElementById("ceilingInfo").innerHTML = "@Ceiling Enter a height >= 63";
 			c_greater = 1;
 			wrongInputCeiling = 1;
 			//return 0;
 		}
 	}
 	else {
-		//document.getElementById("ceilingInfo").innerHTML = "@Ceiling Enter a height > 63";
+		//document.getElementById("ceilingInfo").innerHTML = "@Ceiling Enter a height >= 63";
 		c_else = 1;
 		//wrongInputCeiling = 1;
 		//return 0;
 	}
 	if (typeof ceiling_gap !== "undefined" && ceiling_gap == '') {
-		//document.getElementById("ceilingInfo").innerHTML = "@Ceiling Enter a height > 63";
+		//document.getElementById("ceilingInfo").innerHTML = "@Ceiling Enter a height >= 63";
 		c_undefined = 1;
 		wrongInputCeiling = 1;
 		//console.log("wrongInputCeiling = 1;")
@@ -1142,7 +1142,7 @@ function m_jumpbug()
 	}
 	if (!isNaN(nearestAngle)) {
 		if (nearestAngle < 45 || nearestAngle > 89) {
-			//document.getElementById("angleInfo").innerHTML = "@Angle Nearest angle should be 45 < x < 89";
+			//document.getElementById("angleInfo").innerHTML = "@Angle Nearest angle should be 45 <= x <= 89";
 			a_range = 1;
 			wrongInputAngle = 1;
 			//return 0;
@@ -1173,21 +1173,21 @@ function m_jumpbug()
 	if((wrongInputFloor && wrongInputAngle) || (!wrongInputFloor && wrongInputAngle) || (h_else && c_else) || (wrongInputFloor) && (wrongInputCeiling) || (h_else) && (!wrongInputAngle) || (c_else) || (c_greater) && (!wrongInputFloor) && (!c_undefined)){
 		//console.log("wrongInputFloor:" + wrongInputFloor + " wrongInputAngle:" + wrongInputAngle + " h_else:" + h_else + " c_else:" + c_else + " wrongInputFloor:" + wrongInputFloor + " wrongInputCeiling:" + wrongInputCeiling)
 		if (h_greater || h_else || h_undefined){
-			document.getElementById("bounceInfo").innerHTML = "@Height Enter a height > 1";
+			document.getElementById("bounceInfo").innerHTML = "@Height Enter a height >= 1";
 			document.getElementById("bounceInfo").style.display = "";
 		}else if(h_silly){
 			document.getElementById("bounceInfo").innerHTML = "@Height Silly..";
 			document.getElementById("bounceInfo").style.display = "";
 		};
 		if (c_greater || c_else || c_undefined){
-			document.getElementById("ceilingInfo").innerHTML = "@Ceiling Enter a height > 63";
+			document.getElementById("ceilingInfo").innerHTML = "@Ceiling Enter a height >= 63";
 			document.getElementById("ceilingInfo").style.display = "";
 		}else if(c_silly){
 			document.getElementById("ceilingInfo").innerHTML = "@Ceiling Silly..";
 			document.getElementById("ceilingInfo").style.display = "";
 		};
 		if (a_range){
-			document.getElementById("angleInfo").innerHTML = "∠ Nearest angle should be 45 < x < 89";
+			document.getElementById("angleInfo").innerHTML = "∠ Nearest angle should be 45 <= x <= 89";
 			document.getElementById("angleInfo").style.display = "";
 		}else if(a_number){
 			document.getElementById("angleInfo").innerHTML = "∠ Nearest angle needs to be a number";
@@ -1216,7 +1216,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 	
 	var ceilingResult = checkCeilings(ceiling_gap, true);
 	var bounceResult = checkBounces(floor_height, true);
-	if (ceilingResult[0] == 0 && bounceResult[0] == 0 && !wrongInputFloor) {
+	if (bounceResult[0] == 0 && !wrongInputFloor) {
 		document.getElementById("bounceResults_txt").innerHTML = "No jumpbug found";
 		document.getElementById("bounceResults").style.display = "";
 	} else if (!wrongInputFloor) { 
@@ -1226,19 +1226,19 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 		document.getElementById("bounceResultsU").style.display = "";
 		document.getElementById("bounceResultsC").style.display = "";
 		if (bounceResult[1] == 1) {walkOutU = "<tr><td class='text-right' style='color:green'>Walk</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Jumpbug</td></tr>"
-		}else if (bounceResult[1] == 2) {walkOutU = "<tr><td class='text-right' style='color:#28bbbb'>Walk</td><td style='width: 46px; color:#28bbbb'> -&gt; </td><td class='text-left' style='color:#28bbbb'>Jumpbug (doublebouncehop)</td></tr>"};
+		}else if (bounceResult[1] == 2) {walkOutU = "<tr><td class='text-right' style='color:#28bbbb'>Walk</td><td style='width: 46px; color:#28bbbb'> -&gt; </td><td class='text-left' style='color:#28bbbb'>Jumpbug (doublejumpbug)</td></tr>"};
 		//if (bounceResult[2] == 1) {walkOutC = "<tr><td class='text-right' style='color:green'>Walk</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Crouched</td></tr>"};
 		if (bounceResult[3] == 1) {jumpOutU = "<tr><td class='text-right' style='color:green'>Jump</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Jumpbug</td></tr>"
-		}else if (bounceResult[3] == 2) {jumpOutU = "<tr><td class='text-right' style='color:#28bbbb'>Jump</td><td style='width: 46px; color:#28bbbb'> -&gt; </td><td class='text-left' style='color:#28bbbb'>Jumpbug (doublebouncehop)</td></tr>"};
+		}else if (bounceResult[3] == 2) {jumpOutU = "<tr><td class='text-right' style='color:#28bbbb'>Jump</td><td style='width: 46px; color:#28bbbb'> -&gt; </td><td class='text-left' style='color:#28bbbb'>Jumpbug (doublejumpbug)</td></tr>"};
 		//if (bounceResult[4] == 1) {jumpOutC = "<tr><td class='text-right' style='color:green'>Jump</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Crouched</td></tr>"};
 		if (bounceResult[5] == 1) {ctapOutU = "<tr><td class='text-right' style='color:green'>Ctap</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Jumpbug</td></tr>"
-		}else if (bounceResult[5] == 2) {ctapOutU = "<tr><td class='text-right' style='color:#28bbbb'>Ctap</td><td style='width: 46px; color:#28bbbb'> -&gt; </td><td class='text-left' style='color:#28bbbb'>Jumpbug (doublebouncehop)</td></tr>"};
+		}else if (bounceResult[5] == 2) {ctapOutU = "<tr><td class='text-right' style='color:#28bbbb'>Ctap</td><td style='width: 46px; color:#28bbbb'> -&gt; </td><td class='text-left' style='color:#28bbbb'>Jumpbug (doublejumpbug)</td></tr>"};
 		//if (bounceResult[6] == 1) {ctapOutC = "<tr><td class='text-right' style='color:green'>Ctap</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Crouched</td></tr>"};
 		if (bounceResult[7] == 1) {cjumpOutU = "<tr><td class='text-right' style='color:green'>Crouch Jump</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Jumpbug</td></tr>"
-		}else if (bounceResult[7] == 2) {cjumpOutU = "<tr><td class='text-right' style='color:#28bbbb'>Crouch Jump</td><td style='width: 46px; color:#28bbbb'> -&gt; </td><td class='text-left' style='color:#28bbbb'>Jumpbug (doublebouncehop)</td></tr>"};
+		}else if (bounceResult[7] == 2) {cjumpOutU = "<tr><td class='text-right' style='color:#28bbbb'>Crouch Jump</td><td style='width: 46px; color:#28bbbb'> -&gt; </td><td class='text-left' style='color:#28bbbb'>Jumpbug (doublejumpbug)</td></tr>"};
 		//if (bounceResult[8] == 1) {cjumpOutC = "<tr><td class='text-right' style='color:green'>Crouch Jump</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Crouched</td></tr>"};
 		if (bounceResult[9] == 1) {cwalkOutU = "<tr><td class='text-right' style='color:green'>Crouch Walk</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Jumpbug</td></tr>"
-		}else if (bounceResult[9] == 2) {cwalkOutU = "<tr><td class='text-right' style='color:#28bbbb'>Crouch Walk</td><td style='width: 46px; color:#28bbbb'> -&gt; </td><td class='text-left' style='color:#28bbbb'>Jumpbug (doublebouncehop)</td></tr>"};
+		}else if (bounceResult[9] == 2) {cwalkOutU = "<tr><td class='text-right' style='color:#28bbbb'>Crouch Walk</td><td style='width: 46px; color:#28bbbb'> -&gt; </td><td class='text-left' style='color:#28bbbb'>Jumpbug (doublejumpbug)</td></tr>"};
 		//if (bounceResult[10] == 1) {cwalkOutC = "<tr><td class='text-right' style='color:green'>Crouch Walk</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Crouched</td></tr>"};
 		document.getElementById("bounceTipsU").innerHTML = (walkOutU) + (jumpOutU) + (ctapOutU) + (cjumpOutU) + (cwalkOutU);
 		//document.getElementById("bounceTipsC").innerHTML = (walkOutC) + (jumpOutC) + (ctapOutC) + (cjumpOutC) + (cwalkOutC);
@@ -1250,22 +1250,37 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor) {
 	var ceilingOutC = "";
 	var ceilingFound = 0;
 	
-	if (bounceResult[0] == 0 && ceilingResult[0] == 0 && !wrongInputCeiling) {
+	if (bounceFound == 0 && ceilingResult[0] == 0 && !wrongInputCeiling) {
 		//document.getElementById("ceilingResults").innerHTML = "<h3>No ceilingsmash found</h3>";
 		document.getElementById("bounceResults_txt").innerHTML = "No jumpbug found";
 		document.getElementById("bounceResults").style.display = "";
-	} else if (!wrongInputCeiling) { 
+	} else if (!wrongInputCeiling && ceilingResult[0] == 0 && bounceFound == 0) {
+		document.getElementById("bounceResults_txt").innerHTML = "No ceilingsmash found";
+		document.getElementById("bounceResults").style.display = "";
+	} else if (!wrongInputCeiling && ceilingResult[0] == 1 && bounceFound == 0) { 
 		ceilingFound = 1;
 		//document.getElementById("ceilingResults").innerHTML = "<h3>" + "This height can be ceilingsmashed with:" + "</h3>";
-		document.getElementById("bounceResults_txt").innerHTML = "This height can be jumpbugged with";
+		document.getElementById("bounceResults_txt").innerHTML = "This height can be ceilingsmashed with";
 		document.getElementById("bounceResults").style.display = "";
 		document.getElementById("bounceResultsU").style.display = "";
 		document.getElementById("bounceResultsC").style.display = "";
 		if (ceilingResult[1] == 1) {ceilingOutU = "<tr><td class='text-right' style='color:green'>Ceilingsmash</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Jumpbug</td></tr>"
-		}else if (ceilingResult[1] == 2) {ceilingOutU = "<tr><td class='text-right' style='color:#28bbbb'>Ceilingsmash</td><td style='width: 46px; color:#28bbbb'> -&gt; </td><td class='text-left' style='color:#28bbbb'>Jumpbug (doublebouncehop)</td></tr>"};
+		}else if (ceilingResult[1] == 2) {ceilingOutU = "<tr><td class='text-right' style='color:#28bbbb'>Ceilingsmash</td><td style='width: 46px; color:#28bbbb'> -&gt; </td><td class='text-left' style='color:#28bbbb'>Jumpbug (doublejumpbug)</td></tr>"};
 		//if (ceilingResult[2] == 1) {ceilingOutC = "<tr><td class='text-right' style='color:green'>Ceilingsmash</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Crouched</td></tr>"};
 		document.getElementById("bounceTipsU").innerHTML += (ceilingOutU);
 		//document.getElementById("bounceTipsC").innerHTML += (ceilingOutC);
+	} else if (!wrongInputCeiling && ceilingResult[0] == 1 && bounceFound == 1) { 
+		ceilingFound = 1;
+		//document.getElementById("ceilingResults").innerHTML = "<h3>" + "This height can be ceilingsmashed with:" + "</h3>";
+		//document.getElementById("bounceResults_txt").innerHTML = "This height can be ceilingsmashed with";
+		document.getElementById("bounceResults").style.display = "";
+		document.getElementById("bounceResultsU").style.display = "";
+		document.getElementById("bounceResultsC").style.display = "";
+		if (ceilingResult[1] == 1) {ceilingOutU = "<tr><td class='text-right' style='color:green'>Ceilingsmash</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Jumpbug</td></tr>"
+		}else if (ceilingResult[1] == 2) {ceilingOutU = "<tr><td class='text-right' style='color:#28bbbb'>Ceilingsmash</td><td style='width: 46px; color:#28bbbb'> -&gt; </td><td class='text-left' style='color:#28bbbb'>Jumpbug (doublejumpbug)</td></tr>"};
+		if (ceilingResult[2] == 1) {ceilingOutC = "<tr><td class='text-right' style='color:green'>Ceilingsmash</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Crouched</td></tr>"};
+		document.getElementById("bounceTipsU").innerHTML += (ceilingOutU);
+		document.getElementById("bounceTipsC").innerHTML += (ceilingOutC);
 	}
 }
 	
