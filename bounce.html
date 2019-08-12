@@ -20,6 +20,13 @@
 		filter: invert(100%); 
 	}
     </style>
+	<style>
+	input[type=number]::-webkit-inner-spin-button, 
+	input[type=number]::-webkit-outer-spin-button { 
+		-webkit-appearance: none; 
+		margin: 0; 
+	}
+	</style>
     <!-- End plugin css for this page -->
     <!-- injectjustgage.js:23 * justgage: No element with id : productorder-gage found:css -->
     <link rel="stylesheet" href="css/style.css">
@@ -92,14 +99,14 @@
 						<h4 class="card-title text-center">
 							
 							<form class="form-inline">
-								<input id="txt_height" type="text" class="form-control mb-2 mr-sm-2" placeholder="Enter height...">
-								<input id="txt_height_ceiling" type="text" class="form-control mb-2 mr-sm-2" placeholder="Enter ceiling gap...">
+								<input data-toggle="tooltip" data-placement="top" title="Distance to the platform to bounce on from the ground" id="txt_height" type="number" min="1" maxlength="6" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="form-control mb-2 mr-sm-2" placeholder="Enter height...">
+								<input data-toggle="tooltip" data-placement="top" title="Distance to the platform to bounce on from the ceiling" id="txt_height_ceiling" type="number" min="63" maxlength="6" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="form-control mb-2 mr-sm-2" placeholder="Enter ceiling gap...">
 								
 								<div class="input-group mb-2 mr-sm-2">
 								<div class="input-group-prepend">
-									<div class="input-group-text">∠</div>
+									<div class="input-group-text" style="color: #c9c8c8;">∠</div>
 								</div>
-								<input id="txt_nearestAngle" type="text" class="form-control" placeholder="60.00">
+								<input data-toggle="tooltip" data-placement="top" title="Angle to start searching from" id="txt_nearestAngle" type="number" min="45" max="89" class="form-control" placeholder="60.00">
 								</div>
 								<div class="btn-group" role="group" aria-label="Basic example">
 									<button class="dropdown-toggle show-dropdown-arrow btn btn-inverse-primary mb-2" id="nreportDropdown" href="#" data-toggle="dropdown" aria-expanded="false">Settings</button>
