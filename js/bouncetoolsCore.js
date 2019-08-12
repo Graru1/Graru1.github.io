@@ -11,12 +11,12 @@
 var tickRate = 200/3;
 
 // Special starting types (look straight down fire when going at max horizontal speed (240))
-var bounceSpecialVel = { stock_uncrouch_stand: { RL_type: "stock", text: "(Stock) Uncrouch Stand", vel:416.319000 },
+var bounceSpecialVel = { stock_uncrouch_stand: { RL_type: "stock", text: "(Stock) Uncrouch No Walk", vel:416.319000 },
                          stock_uncrouch_walk_right: { RL_type: "stock", text: "(Stock) Uncrouch Walk Right", vel:445.529510 },
                          stock_uncrouch_walk_left: { RL_type: "stock", text: "(Stock) Uncrouch Walk Left", vel:371.735809 },
                          stock_uncrouch_walk_forward: { RL_type: "stock", text: "(Stock) Uncrouch Walk Forward", vel:395.333770 },
                          stock_uncrouch_walk_backward: { RL_type: "stock", text: "(Stock) Uncrouch Walk Backward", vel:407.481628 },
-                         stock_crouch_stand: { RL_type: "stock", text: "(Stock) Crouch Stand", vel:591.277954 },
+                         stock_crouch_stand: { RL_type: "stock", text: "(Stock) Crouch No Walk", vel:591.277954 },
                          stock_crouch_walk_right: { RL_type: "stock", text: "(Stock) Crouch Walk Right", vel:604.681518 },
                          stock_crouch_walk_left: { RL_type: "stock", text: "(Stock) Crouch Walk Left", vel:576.230224 },
                          stock_crouch_walk_forward: { RL_type: "stock", text: "(Stock) Crouch Walk Forward", vel:600.576538 },
@@ -33,11 +33,11 @@ var bounceSpecialVel = { stock_uncrouch_stand: { RL_type: "stock", text: "(Stock
 						 
 						 
 						 
-						 original_uncrouch_stand: { RL_type: "original", text: "(Original) Uncrouch Stand", vel:445.986633 },
+						 original_uncrouch_stand: { RL_type: "original", text: "(Original) Uncrouch No Walk", vel:445.986633 },
                          original_uncrouch_walk_leftright: { RL_type: "original", text: "(Original) Uncrouch Walk Left/Right", vel:419.643920 },
                          original_uncrouch_walk_forward: { RL_type: "original", text: "(Original) Uncrouch Walk Forward", vel:413.769744 },
                          original_uncrouch_walk_backward: { RL_type: "original", text: "(Original) Uncrouch Walk Backward", vel:429.627014 },
-                         original_crouch_stand: { RL_type: "original", text: "(Original) Crouch Stand", vel:631.863708 },
+                         original_crouch_stand: { RL_type: "original", text: "(Original) Crouch No Walk", vel:631.863708 },
                          original_crouch_walk_leftright: { RL_type: "original", text: "(Original) Crouch Walk Left/Right", vel:629.907104 },
                          original_crouch_walk_forward: { RL_type: "original", text: "(Original) Crouch Walk Forward", vel:645.275085 },
                          original_crouch_walk_backward: { RL_type: "original", text: "(Original) Crouch Walk Backward", vel:616.712707 },
@@ -47,23 +47,23 @@ var bounceSpecialVel = { stock_uncrouch_stand: { RL_type: "stock", text: "(Stock
                          original_crouch_forwardleftright: { RL_type: "original", text: "(Original) Crouch Forward&Left/Right", vel: 640.437744, note: "[Unreliable]" },
                          original_crouch_backwardleftright: { RL_type: "original", text: "(Original) Crouch Backward&Left/Right", vel: 620.422119, note: "[Unreliable]" },
 						 
-                        // original_uncrouch_stand: { RL_type: "original", text: "(Original) Uncrouch Stand", vel:445.987030 },
+                        // original_uncrouch_stand: { RL_type: "original", text: "(Original) Uncrouch No Walk", vel:445.987030 },
                         // original_uncrouch_walk_leftright: { RL_type: "original", text: "(Original) Uncrouch Walk Left/Right", vel:419.643127 },
                         // original_uncrouch_walk_forward: { RL_type: "original", text: "(Original) Uncrouch Walk Forward", vel:413.770080 },
                         // original_uncrouch_walk_backward: { RL_type: "original", text: "(Original) Uncrouch Walk Backward", vel:429.626434 },
-                        // original_crouch_stand: { RL_type: "original", text: "(Original) Crouch Stand", vel:631.862487 },
+                        // original_crouch_stand: { RL_type: "original", text: "(Original) Crouch No Walk", vel:631.862487 },
                         // original_crouch_walk_leftright: { RL_type: "original", text: "(Original) Crouch Walk Left/Right", vel:629.907165 },
                         // original_crouch_walk_forward: { RL_type: "original", text: "(Original) Crouch Walk Forward", vel:645.274536 },
                         // original_crouch_walk_backward: { RL_type: "original", text: "(Original) Crouch Walk Backward", vel:616.711364 },
 						
 						
 						
-						 cowmangler_uncrouch_stand: { RL_type: "cowmangler", text: "(Cow Mangler) Uncrouch Stand", vel:429.504943 },
+						 cowmangler_uncrouch_stand: { RL_type: "cowmangler", text: "(Cow Mangler) Uncrouch No Walk", vel:429.504943 },
                          cowmangler_uncrouch_walk_right: { RL_type: "cowmangler", text: "(Cow Mangler) Uncrouch Walk Right", vel:442.260009 },
                          cowmangler_uncrouch_walk_left: { RL_type: "cowmangler", text: "(Cow Mangler) Uncrouch Walk Left", vel:388.863159 },
                          cowmangler_uncrouch_walk_forward: { RL_type: "cowmangler", text: "(Cow Mangler) Uncrouch Walk Forward", vel:405.110076 },
                          cowmangler_uncrouch_walk_backward: { RL_type: "cowmangler", text: "(Cow Mangler) Uncrouch Walk Backward", vel:418.827392 },
-                         cowmangler_crouch_stand: { RL_type: "cowmangler", text: "(Cow Mangler) Crouch Stand", vel:612.280700 },
+                         cowmangler_crouch_stand: { RL_type: "cowmangler", text: "(Cow Mangler) Crouch No Walk", vel:612.280700 },
                          cowmangler_crouch_walk_right: { RL_type: "cowmangler", text: "(Cow Mangler) Crouch Walk Right", vel:621.940795 },
                          cowmangler_crouch_walk_left: { RL_type: "cowmangler", text: "(Cow Mangler) Crouch Walk Left", vel:600.183776 },
                          cowmangler_crouch_walk_forward: { RL_type: "cowmangler", text: "(Cow Mangler) Crouch Walk Forward", vel:623.125061 },
@@ -78,12 +78,12 @@ var bounceSpecialVel = { stock_uncrouch_stand: { RL_type: "stock", text: "(Stock
                          cowmangler_crouch_backwardright: { RL_type: "cowmangler", text: "(Cow Mangler) Crouch Backward&Right", vel: 609.867736, note: "[Unreliable]" },
 						 cowmangler_crouch_backwardleft: { RL_type: "cowmangler", text: "(Cow Mangler) Crouch Backward&Left", vel: 595.373779, note: "[Unreliable]" },
 						 
-                        // cowmangler_uncrouch_stand: { RL_type: "cowmangler", text: "(Cow Mangler) Uncrouch Stand", vel:429.504699 },
+                        // cowmangler_uncrouch_stand: { RL_type: "cowmangler", text: "(Cow Mangler) Uncrouch No Walk", vel:429.504699 },
                         // cowmangler_uncrouch_walk_right: { RL_type: "cowmangler", text: "(Cow Mangler) Uncrouch Walk Right", vel:442.260070 },
                         // cowmangler_uncrouch_walk_left: { RL_type: "cowmangler", text: "(Cow Mangler) Uncrouch Walk Left", vel:388.864471 },
                         // cowmangler_uncrouch_walk_forward: { RL_type: "cowmangler", text: "(Cow Mangler) Uncrouch Walk Forward", vel:405.110443 },
                         // cowmangler_uncrouch_walk_backward: { RL_type: "cowmangler", text: "(Cow Mangler) Uncrouch Walk Backward", vel:418.827087 },
-                        // cowmangler_crouch_stand: { RL_type: "cowmangler", text: "(Cow Mangler) Crouch Stand", vel:612.282043 },
+                        // cowmangler_crouch_stand: { RL_type: "cowmangler", text: "(Cow Mangler) Crouch No Walk", vel:612.282043 },
                         // cowmangler_crouch_walk_right: { RL_type: "cowmangler", text: "(Cow Mangler) Crouch Walk Right", vel:621.940307 },
                         // cowmangler_crouch_walk_left: { RL_type: "cowmangler", text: "(Cow Mangler) Crouch Walk Left", vel:600.181823 },
                         // cowmangler_crouch_walk_forward: { RL_type: "cowmangler", text: "(Cow Mangler) Crouch Walk Forward", vel:623.124084 },
@@ -91,12 +91,12 @@ var bounceSpecialVel = { stock_uncrouch_stand: { RL_type: "stock", text: "(Stock
 						
 						
 						
-						 cowmanglercharged_uncrouch_stand: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Uncrouch Stand", vel:433.183532 },
+						 cowmanglercharged_uncrouch_stand: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Uncrouch No Walk", vel:433.183532 },
                          cowmanglercharged_uncrouch_walk_right: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Uncrouch Walk Right", vel:445.936309 },
                          cowmanglercharged_uncrouch_walk_left: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Uncrouch Walk Left", vel:413.825378 },
                          cowmanglercharged_uncrouch_walk_forward: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Uncrouch Walk Forward", vel:423.834533 },
                          cowmanglercharged_uncrouch_walk_backward: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Uncrouch Walk Backward", vel:430.357269 },
-                         cowmanglercharged_crouch_stand: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Crouch Stand", vel:620.069274 },
+                         cowmanglercharged_crouch_stand: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Crouch No Walk", vel:620.069274 },
                          cowmanglercharged_crouch_walk_right: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Crouch Walk Right", vel:624.288574 },
                          cowmanglercharged_crouch_walk_left: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Crouch Walk Left", vel:615.392700 },
                          cowmanglercharged_crouch_walk_forward: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Crouch Walk Forward", vel:624.746643 },
@@ -111,12 +111,12 @@ var bounceSpecialVel = { stock_uncrouch_stand: { RL_type: "stock", text: "(Stock
                          cowmanglercharged_crouch_backwardright: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Crouch Backward&Right", vel: 619.456298, note: "[Unreliable]" },
 						 cowmanglercharged_crouch_backwardleft: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Crouch Backward&Left", vel: 613.319702, note: "[Unreliable]" }
 						
-                        // cowmanglercharged_uncrouch_stand: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Uncrouch Stand", vel:433.183135 },
+                        // cowmanglercharged_uncrouch_stand: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Uncrouch No Walk", vel:433.183135 },
                         // cowmanglercharged_uncrouch_walk_right: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Uncrouch Walk Right", vel:445.937408 },
                         // cowmanglercharged_uncrouch_walk_left: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Uncrouch Walk Left", vel:413.827667 },
                         // cowmanglercharged_uncrouch_walk_forward: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Uncrouch Walk Forward", vel:423.834197 },
                         // cowmanglercharged_uncrouch_walk_backward: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Uncrouch Walk Backward", vel:430.357788 },
-                        // cowmanglercharged_crouch_stand: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Crouch Stand", vel:620.068969 },
+                        // cowmanglercharged_crouch_stand: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Crouch No Walk", vel:620.068969 },
                         // cowmanglercharged_crouch_walk_right: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Crouch Walk Right", vel:624.288513 },
                         // cowmanglercharged_crouch_walk_left: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Crouch Walk Left", vel:615.393249 },
                         // cowmanglercharged_crouch_walk_forward: { RL_type: "cowmanglercharged", text: "(Cow Mangler Charged) Crouch Walk Forward", vel:624.745910 },
