@@ -13,6 +13,13 @@ function m(){
 		//document.getElementById("bounceResultsU").classList.add("col-lg-6");
 		//document.getElementById("divID_Diff_cA_Un").classList.add("col-lg-6");
 		//document.getElementById("specialResultsU").classList.add("col-lg-6");
+		document.getElementById("bounceTipsSpecialC").innerHTML = ""
+		document.getElementById("bounceTipsC").innerHTML = ""
+		document.getElementById("divID_DiffTitleDescC").innerHTML = ""
+		document.getElementById("bounceTipsSpecialU").innerHTML = ""
+		document.getElementById("bounceTipsU").innerHTML = ""
+		document.getElementById("divID_DiffTitleDescUn").innerHTML = ""
+		
 		document.getElementById("cardTitle1U").innerHTML = "Land Uncrouched"
 		document.getElementById("cardTitle2U").innerHTML = "Land Uncrouched"
 		document.getElementById("cardTitle3U").innerHTML = "Land Uncrouched"
@@ -28,6 +35,13 @@ function m(){
 		//document.getElementById("bounceResultsU").classList.add("col-lg-12");
 		//document.getElementById("divID_Diff_cA_Un").classList.add("col-lg-12");
 		//document.getElementById("specialResultsU").classList.add("col-lg-12");
+		document.getElementById("bounceTipsSpecialC").innerHTML = ""
+		document.getElementById("bounceTipsC").innerHTML = ""
+		document.getElementById("divID_DiffTitleDescC").innerHTML = ""
+		document.getElementById("bounceTipsSpecialU").innerHTML = ""
+		document.getElementById("bounceTipsU").innerHTML = ""
+		document.getElementById("divID_DiffTitleDescUn").innerHTML = ""
+		
 		document.getElementById("cardTitle1U").innerHTML = "Jumpbug"
 		document.getElementById("cardTitle2U").innerHTML = "Jumpbug"
 		document.getElementById("cardTitle3U").innerHTML = "Jumpbug"
@@ -1280,7 +1294,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor || d
 		}else if (ceilingResult[1] == 2) {ceilingOutU = "<tr><td class='text-right' style='color:#28bbbb'>Ceilingsmash</td><td style='width: 46px; color:#28bbbb'> -&gt; </td><td class='text-left' style='color:#28bbbb'>Jumpbug (doublejumpbug)</td></tr>"};
 		if (ceilingResult[2] == 1) {ceilingOutC = "<tr><td class='text-right' style='color:green'>Ceilingsmash</td><td style='width: 46px; color:green'> -&gt; </td><td class='text-left' style='color:green'>Crouched</td></tr>"};
 		document.getElementById("bounceTipsU").innerHTML += (ceilingOutU);
-		document.getElementById("bounceTipsC").innerHTML += (ceilingOutC);
+		//document.getElementById("bounceTipsC").innerHTML += (ceilingOutC);
 	}
 }
 	
@@ -1326,7 +1340,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor || d
 					//	document.getElementById("divID_DiffTitleDescC").innerHTML += "<tr><td class='text-right' style='color:green'>Custom Angle (Stock) Uncrouched</td><td id='td_cA_ba1_C' class='text-center' style='width: 46px; color:green'>(ba1)</td><td id='td_cA_ba2_C' class='text-left' style='color:green'>(ba2)</td></tr>";
 					//	document.getElementById("td_cA_ba1_C").innerHTML = ba1;
 					//	document.getElementById("td_cA_ba2_C").innerHTML = ba2;
-						document.getElementById("divID_Diff_cA_C").style.display = "";
+						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					//	document.getElementById("divID_DiffTitle_txt").innerHTML = "Jumpbugs";
 					//	document.getElementById("divID_DiffTitle").style.display = "";
 					}
@@ -1364,7 +1378,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor || d
 					//	document.getElementById("divID_DiffTitleDescC").innerHTML += "<tr><td class='text-right' style='color:green'>Custom Angle (Stock) Crouched</td><td id='td_cA_ba1_C_C' class='text-center' style='width: 46px; color:green'>(ba1)</td><td id='td_cA_ba2_C_C' class='text-left' style='color:green'>(ba2)</td></tr>";
 					//	document.getElementById("td_cA_ba1_C_C").innerHTML = ba1;
 					//	document.getElementById("td_cA_ba2_C_C").innerHTML = ba2;
-						document.getElementById("divID_Diff_cA_C").style.display = "";
+						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					//	document.getElementById("divID_DiffTitle_txt").innerHTML = "Jumpbugs";
 					//	document.getElementById("divID_DiffTitle").style.display = "";
 					}
@@ -1406,7 +1420,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor || d
 					//	document.getElementById("divID_DiffTitleDescC").innerHTML += "<tr><td class='text-right' style='color:green'>Custom Angle (Original) Uncrouched</td><td id='td_cA_ba1_C' class='text-center' style='width: 46px; color:green'>(ba1)</td><td id='td_cA_ba2_C' class='text-left' style='color:green'>(ba2)</td></tr>";
 					//	document.getElementById("td_cA_ba1_C").innerHTML = ba1;
 					//	document.getElementById("td_cA_ba2_C").innerHTML = ba2;
-						document.getElementById("divID_Diff_cA_C").style.display = "";
+						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					//	document.getElementById("divID_DiffTitle_txt").innerHTML = "Jumpbugs";
 					//	document.getElementById("divID_DiffTitle").style.display = "";
 					}
@@ -1444,7 +1458,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor || d
 					//	document.getElementById("divID_DiffTitleDescC").innerHTML += "<tr><td class='text-right' style='color:green'>Custom Angle (Original) Crouched</td><td id='td_cA_ba1_C_C' class='text-center' style='width: 46px; color:green'>(ba1)</td><td id='td_cA_ba2_C_C' class='text-left' style='color:green'>(ba2)</td></tr>";
 					//	document.getElementById("td_cA_ba1_C_C").innerHTML = ba1;
 					//	document.getElementById("td_cA_ba2_C_C").innerHTML = ba2;
-						document.getElementById("divID_Diff_cA_C").style.display = "";
+						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					//	document.getElementById("divID_DiffTitle_txt").innerHTML = "Jumpbugs";
 					//	document.getElementById("divID_DiffTitle").style.display = "";
 					}
@@ -1486,7 +1500,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor || d
 					//	document.getElementById("divID_DiffTitleDescC").innerHTML += "<tr><td class='text-right' style='color:green'>Custom Angle (Cow Mangler) Uncrouched</td><td id='td_cA_ba1_C' class='text-center' style='width: 46px; color:green'>(ba1)</td><td id='td_cA_ba2_C' class='text-left' style='color:green'>(ba2)</td></tr>";
 					//	document.getElementById("td_cA_ba1_C").innerHTML = ba1;
 					//	document.getElementById("td_cA_ba2_C").innerHTML = ba2;
-						document.getElementById("divID_Diff_cA_C").style.display = "";
+						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					//	document.getElementById("divID_DiffTitle_txt").innerHTML = "Jumpbugs";
 					//	document.getElementById("divID_DiffTitle").style.display = "";
 					}
@@ -1524,7 +1538,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor || d
 					//	document.getElementById("divID_DiffTitleDescC").innerHTML += "<tr><td class='text-right' style='color:green'>Custom Angle (Cow Mangler) Crouched</td><td id='td_cA_ba1_C_C' class='text-center' style='width: 46px; color:green'>(ba1)</td><td id='td_cA_ba2_C_C' class='text-left' style='color:green'>(ba2)</td></tr>";
 					//	document.getElementById("td_cA_ba1_C_C").innerHTML = ba1;
 					//	document.getElementById("td_cA_ba2_C_C").innerHTML = ba2;
-						document.getElementById("divID_Diff_cA_C").style.display = "";
+						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					//	document.getElementById("divID_DiffTitle_txt").innerHTML = "Jumpbugs";
 					//	document.getElementById("divID_DiffTitle").style.display = "";
 					}
@@ -1566,7 +1580,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor || d
 					//	document.getElementById("divID_DiffTitleDescC").innerHTML += "<tr><td class='text-right' style='color:green'>Custom Angle (Cow Mangler Charged) Uncrouched</td><td id='td_cA_ba1_C' class='text-center' style='width: 46px; color:green'>(ba1)</td><td id='td_cA_ba2_C' class='text-left' style='color:green'>(ba2)</td></tr>";
 					//	document.getElementById("td_cA_ba1_C").innerHTML = ba1;
 					//	document.getElementById("td_cA_ba2_C").innerHTML = ba2;
-						document.getElementById("divID_Diff_cA_C").style.display = "";
+						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					//	document.getElementById("divID_DiffTitle_txt").innerHTML = "Jumpbugs";
 					//	document.getElementById("divID_DiffTitle").style.display = "";
 					}
@@ -1604,7 +1618,7 @@ if (document.getElementById("chk_bouncesCheck").checked && !wrongInputFloor || d
 					//	document.getElementById("divID_DiffTitleDescC").innerHTML += "<tr><td class='text-right' style='color:green'>Custom Angle (Cow Mangler Charged) Crouched</td><td id='td_cA_ba1_C_C' class='text-center' style='width: 46px; color:green'>(ba1)</td><td id='td_cA_ba2_C_C' class='text-left' style='color:green'>(ba2)</td></tr>";
 					//	document.getElementById("td_cA_ba1_C_C").innerHTML = ba1;
 					//	document.getElementById("td_cA_ba2_C_C").innerHTML = ba2;
-						document.getElementById("divID_Diff_cA_C").style.display = "";
+						document.getElementById("divID_Diff_cA_C").style.display = "none";
 					//	document.getElementById("divID_DiffTitle_txt").innerHTML = "Jumpbugs";
 					//	document.getElementById("divID_DiffTitle").style.display = "";
 					}
