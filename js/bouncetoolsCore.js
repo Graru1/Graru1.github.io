@@ -153,7 +153,7 @@ function checkBounceWalk(height, walk_type, bounce_type, jumpbug)
 		
 		//console.log("pos: " + pos);
 		
-		if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+		if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 			//console.log("pos: " + pos);
 			if (0.705078 <= (Math.ceil(pos) - pos) && (Math.ceil(pos) - pos) <= 0.999999){
 				//console.log("assigning2 1");
@@ -168,7 +168,7 @@ function checkBounceWalk(height, walk_type, bounce_type, jumpbug)
 				if (vel <= -3500) {
 					vel = -3500;
 				}
-				if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+				if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 					//console.log("pos: " + pos);
 					if (0.705078 <= (Math.ceil(pos) - pos) && (Math.ceil(pos) - pos) <= 0.999999){
 						//console.log("assigning2 2");
@@ -183,7 +183,7 @@ function checkBounceWalk(height, walk_type, bounce_type, jumpbug)
 						if (vel <= -3500) {
 							vel = -3500;
 						}
-						if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+						if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 							//console.log("pos: " + pos);
 							if (0.705078 <= (Math.ceil(pos) - pos) && (Math.ceil(pos) - pos) <= 0.999999){
 								//console.log("assigning2 3");
@@ -198,7 +198,7 @@ function checkBounceWalk(height, walk_type, bounce_type, jumpbug)
 								if (vel <= -3500) {
 									vel = -3500;
 								}
-								if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+								if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 									//console.log("pos: " + pos);
 									if (0.705078 <= (Math.ceil(pos) - pos) && (Math.ceil(pos) - pos) <= 0.999999){
 										//console.log("assigning2 4");
@@ -258,7 +258,7 @@ function checkBounceJump(height, bounce_type, jumpbug)
 		
 		//console.log("pos: " + pos);
 		
-		if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+		if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 			//console.log("pos: " + pos);
 			if (0.705078 <= (Math.ceil(pos) - pos) && (Math.ceil(pos) - pos) <= 0.999999){
 				//console.log("assigning2 1");
@@ -273,7 +273,7 @@ function checkBounceJump(height, bounce_type, jumpbug)
 				if (vel <= -3500) {
 					vel = -3500;
 				}
-				if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+				if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 					//console.log("pos: " + pos);
 					if (0.705078 <= (Math.ceil(pos) - pos) && (Math.ceil(pos) - pos) <= 0.999999){
 						//console.log("assigning2 2");
@@ -288,7 +288,7 @@ function checkBounceJump(height, bounce_type, jumpbug)
 						if (vel <= -3500) {
 							vel = -3500;
 						}
-						if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+						if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 							//console.log("pos: " + pos);
 							if (0.705078 <= (Math.ceil(pos) - pos) && (Math.ceil(pos) - pos) <= 0.999999){
 								//console.log("assigning2 3");
@@ -303,7 +303,7 @@ function checkBounceJump(height, bounce_type, jumpbug)
 								if (vel <= -3500) {
 									vel = -3500;
 								}
-								if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+								if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 									//console.log("pos: " + pos);
 									if (0.705078 <= (Math.ceil(pos) - pos) && (Math.ceil(pos) - pos) <= 0.999999){
 										//console.log("assigning2 4");
@@ -363,7 +363,7 @@ function checkBounceCJump(height, bounce_type, jumpbug)
 		
 		//console.log("pos: " + pos);
 		
-		if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+		if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 			//console.log("pos: " + pos);
 			if (0.705078 <= (Math.ceil(pos) - pos) && (Math.ceil(pos) - pos) <= 0.999999){
 				//console.log("assigning2 1");
@@ -378,7 +378,7 @@ function checkBounceCJump(height, bounce_type, jumpbug)
 				if (vel <= -3500) {
 					vel = -3500;
 				}
-				if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+				if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 					//console.log("pos: " + pos);
 					if (0.705078 <= (Math.ceil(pos) - pos) && (Math.ceil(pos) - pos) <= 0.999999){
 						//console.log("assigning2 2");
@@ -393,7 +393,7 @@ function checkBounceCJump(height, bounce_type, jumpbug)
 						if (vel <= -3500) {
 							vel = -3500;
 						}
-						if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+						if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 							//console.log("pos: " + pos);
 							if (0.705078 <= (Math.ceil(pos) - pos) && (Math.ceil(pos) - pos) <= 0.999999){
 								//console.log("assigning2 3");
@@ -408,7 +408,7 @@ function checkBounceCJump(height, bounce_type, jumpbug)
 								if (vel <= -3500) {
 									vel = -3500;
 								}
-								if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+								if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 									//console.log("pos: " + pos);
 									if (0.705078 <= (Math.ceil(pos) - pos) && (Math.ceil(pos) - pos) <= 0.999999){
 										//console.log("assigning2 4");
@@ -468,7 +468,7 @@ function checkBounceCtap(height, bounce_type, jumpbug)
 		
 		//console.log("pos: " + pos);
 		
-		if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+		if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 			//console.log("pos: " + pos);
 			if (0.705078 <= (Math.ceil(pos) - pos) && (Math.ceil(pos) - pos) <= 0.999999){
 				//console.log("assigning2 1");
@@ -483,7 +483,7 @@ function checkBounceCtap(height, bounce_type, jumpbug)
 				if (vel <= -3500) {
 					vel = -3500;
 				}
-				if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+				if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 					//console.log("pos: " + pos);
 					if (0.705078 <= (Math.ceil(pos) - pos) && (Math.ceil(pos) - pos) <= 0.999999){
 						//console.log("assigning2 2");
@@ -498,7 +498,7 @@ function checkBounceCtap(height, bounce_type, jumpbug)
 						if (vel <= -3500) {
 							vel = -3500;
 						}
-						if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+						if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 							//console.log("pos: " + pos);
 							if (0.705078 <= (Math.ceil(pos) - pos) && (Math.ceil(pos) - pos) <= 0.999999){
 								//console.log("assigning2 3");
@@ -513,7 +513,7 @@ function checkBounceCtap(height, bounce_type, jumpbug)
 								if (vel <= -3500) {
 									vel = -3500;
 								}
-								if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+								if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 									//console.log("pos: " + pos);
 									if (0.705078 <= (Math.ceil(pos) - pos) && (Math.ceil(pos) - pos) <= 0.999999){
 										//console.log("assigning2 4");
@@ -670,7 +670,7 @@ function checkBounceCeiling(height, bounce_type, jumpbug)
 		//console.log("pos: " + pos);
 		//console.log("pos2: " + (pos - -height));
 
-		if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+		if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 			//console.log("pos: " + pos);
 			if (0.705078 <= (Math.ceil(pos) - pos) && (Math.ceil(pos) - pos) <= 0.999999){
 				//console.log("assigning2 1");
@@ -685,7 +685,7 @@ function checkBounceCeiling(height, bounce_type, jumpbug)
 				if (vel <= -3500) {
 					vel = -3500;
 				}
-				if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+				if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 					if (Bounce == 0){
 						Bounce = 1
 					}
@@ -703,7 +703,7 @@ function checkBounceCeiling(height, bounce_type, jumpbug)
 						if (vel <= -3500) {
 							vel = -3500;
 						}
-						if (1.999 > (pos - -height) && (pos - -height) > 0.99*!jumpbug) {
+						if (2 > (pos - -height) && (pos - -height) > 1*!jumpbug) {
 							//console.log("pos: " + pos);
 							if (0.705078 <= (Math.ceil(pos) - pos) && (Math.ceil(pos) - pos) <= 0.999999){
 								//console.log("assigning2 3");
