@@ -20700,7 +20700,8 @@ code {
 .input-group-prepend .input-group-text {
   border-color: #f1f6f8;
   padding: 0.875rem 0.75rem;
-  color: #c9c8c8;
+  color: #ffffff;
+  /* color: #c9c8c8; */
 }
 
 .form-control, .typeahead,
