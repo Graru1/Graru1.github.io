@@ -67,8 +67,8 @@ function m_bounce()
 	var wrongInputAngle = 0;
 	var wrongInputFloor = 0;
 	var wrongInputCeiling = 0;
-	var floor_height = document.getElementById("txt_height").value;
-	var ceiling_gap = document.getElementById("txt_height_ceiling").value;
+	var floor_height = document.getElementById("txt_height").value + 0.03125;
+	var ceiling_gap = document.getElementById("txt_height_ceiling").value - 0.03125;
 	var nearestAngle = document.getElementById("txt_nearestAngle").value;
 
 	document.getElementById("bounceInfo").innerHTML = "";
