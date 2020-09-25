@@ -67,8 +67,8 @@ function m_bounce()
 	var wrongInputAngle = 0;
 	var wrongInputFloor = 0;
 	var wrongInputCeiling = 0;
-	var floor_height = document.getElementById("txt_height").value + 0.03125;
-	var ceiling_gap = document.getElementById("txt_height_ceiling").value - 0.03125;
+	var floor_height = document.getElementById("txt_height").value;
+	var ceiling_gap = document.getElementById("txt_height_ceiling").value;
 	var nearestAngle = document.getElementById("txt_nearestAngle").value;
 
 	document.getElementById("bounceInfo").innerHTML = "";
@@ -186,6 +186,10 @@ function m_bounce()
 		wrongInputAngle = 1;
 		//return 0;
 	}
+	
+	// Deal with adding and subtracting 0.03125
+	floor_height = parseInt(floor_height, 10) + 0.03125;
+	ceiling_gap -= 0.03125;
 	
 //console.log("h_silly:" + h_silly)
 //console.log("h_greater:" + h_greater)
