@@ -187,10 +187,6 @@ function m_bounce()
 		//return 0;
 	}
 	
-	// Deal with adding and subtracting 0.03125
-	floor_height = parseInt(floor_height, 10) + 0.03125;
-	ceiling_gap -= 0.03125;
-	
 //console.log("h_silly:" + h_silly)
 //console.log("h_greater:" + h_greater)
 //console.log("h_else:" + h_else)
@@ -232,6 +228,10 @@ function m_bounce()
 	}
 	//console.log("wrongInputFloor:" + wrongInputFloor + " wrongInputAngle:" + wrongInputAngle + " h_else:" + h_else + " c_else:" + c_else)
 	
+	// Deal with adding and subtracting 0.03125
+	floor_height = parseInt(floor_height, 10) + 0.03125;
+	ceiling_gap -= 0.03125;
+
 	// 
 	var f_h = 0 - floor_height;
 	
